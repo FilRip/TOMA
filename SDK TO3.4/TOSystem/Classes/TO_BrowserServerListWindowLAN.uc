@@ -1,0 +1,1 @@
+class TO_BrowserServerListWindowLAN extends UTBrowserServerListWindow;

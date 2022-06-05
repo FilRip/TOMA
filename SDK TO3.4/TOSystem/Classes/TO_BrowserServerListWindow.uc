@@ -1,0 +1,1 @@
+class TO_BrowserServerListWindow extends UTBrowserServerListWindow;

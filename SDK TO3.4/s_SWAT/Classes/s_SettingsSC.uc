@@ -1,0 +1,1 @@
+class s_SettingsSC extends UWindowScrollingDialogClient;

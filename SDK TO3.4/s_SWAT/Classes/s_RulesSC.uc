@@ -1,0 +1,1 @@
+class s_RulesSC extends UWindowScrollingDialogClient;

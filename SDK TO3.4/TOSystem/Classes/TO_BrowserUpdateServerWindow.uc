@@ -1,0 +1,1 @@
+class TO_BrowserUpdateServerWindow extends UBrowserUpdateServerWindow;
