@@ -1,0 +1,115 @@
+$Id: changelog.txt 560 2004-04-15 15:54:06Z stark $
+
+
+TOST 4.2.2.0:
+=============
+
+TOST42:
+	# Fixed
+	- internal TOST messages are now queued to reduce lag caused by admintab or players
+
+TOSTClient:
+	# Added
+	- increased the Laserpointer-size for Windows-OpenGL-Users by 25% cause of rendering problems
+	- TOSTLogo text shows "key not set"-warning or TOP3 version
+	
+	# Fixed
+	- #T-macro can no longer be abused to identify players before the HUD does (echo #T exploit on movebinds to easily detect enemies)
+
+TOSTFun:
+	# Added
+	- Added DiLDoG's Announcer 0.4.7.0 (TOSTFun.TOSTAnnouncer, needs additional Soundpack)
+
+TOSTHitparade:
+	# Changed
+	- the stats are only displayed at end of the round when CWMode is activated
+
+TOSTIRC:
+	# Fixed
+	- the "bomb has been planted"-message was deleted in the last update
+	- "defusing aborted"-bug
+	- reported two kickmessages instead of one
+
+TOSTTools:
+	# Added
+	- now sending list of outdated pieces to TOSTIRC
+	- alot known cheats added to CheatID database
+	
+	# Fixed
+	- sadelpw-bug
+	- Quicksettings/Servername-bug
+	- sapause/unpause-bug
+	
+	# Changed
+	- new format for global banlist, to support even more bans :)
+
+TOSTProtect:
+	# Added
+	- now checking all console-commands, aliases, keybinds and execs
+	  (see the official TO/TOST/ACC Whitelist http://tost.tactical-ops.to/whitelist for rules!!!)
+	- stoppped alot known cheats/tweaks
+	- Mod-menu is disabled when playing online due to cheat abuses
+	- some new general protection methods
+	- a "QuickFix"-method to stop released cheats
+	- player-movement speed is now limited to MIN/MAX-values to avoid abuses
+	  (Forward/Backward/Strafe: +-600, Jump/Duck: +-300)
+	
+	# Fixed
+	- false kicks cause of too small Actor DB
+	
+	# Changed
+	- incresed default timout-values
+
+TOSTTOP3Client:
+	# Fixed
+	- Crash when starting demorec and TP is still checking
+	- "No TP after mapchange"-bug
+
+TOSTTOP3Support:
+	# Added
+	- Displays the cheat-name if already known
+
+	
+
+TOST 4.1.7.3 Server-Update-Pack:
+================================
+
+TOSTIRC:
+	# Added
+	- reporting of some kick- and ban-messages that were missing
+	- a "reconnect"-command
+	- reporting of: bomb defuse-start/abort/remaining time, every rescued hostage, every escaped terrorist
+	
+	# Changed
+	- internal buffer-system was rewritten completely and cleaned up code
+	- adjusted scoreboard output for the new TO-Server version
+	
+	# Fixed
+	- fixed channels joins for some networks
+
+TOSTTools:
+	# Added
+	- update the Player-Scores at mapend (only for new TO-Server version)
+	
+	# Changed
+	- Removed a check wich cleans ini if ExtraTools was installed
+	
+	# Fixed
+	- tempkickban on warning
+	- "forced teamchange"-message
+	- all mkteams-functions
+	- mute notice
+	- automkteams quicksettings loading bug
+	- tempban notice
+
+
+TOSTTOP3Support:
+	# Added
+	- sends a Message to other Pieces when a cheat was found
+	
+	# Fixed
+	- false kicks when www.to-protect.de was unreachable
+	- a security related bug that allowed people to bypass checks
+	- close warpix log even if none taken
+	- you "have 5 secs to auth warning" which was showed 5 times
+

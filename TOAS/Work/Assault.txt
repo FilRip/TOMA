@@ -1,0 +1,32 @@
+Assault Mod [100% FF] [Nade FF = On] [Active Rounds]
+
+Special Forces.
+
+Support:	[M16, M4A1] [Spas, Desert Eagle, Beretta] [HE, Conc, Smoke] [Night-Vision] [Armour] [Knives]
+Sniper:	[MSG90] [SMG II, Desert Eagle, Beretta] [Smoke] [Night-Vision] [Armour] [Knives]
+Assault:	[MP5SD,Spas] [Beretta] [Conc, Flash, TearGas] [Night-Vision] [Armour] [Knives]
+
+Terrorists.
+
+Support:	[M16, AK47] [Mossberg, Desert Eagle, Glock] [HE, Conc, Smoke] [Night-Vision] [Armour] [Knives]
+Sniper:	[MSG90] [Uzi, Desert Eagle, glock] [Smoke] [Night-Vision] [Armour] [Knives]
+Assault:	[MP5, Mossberg] [Glock] [Conc, Flash, TearGas] [Night-Vision] [Armour] [Knives]
+
+On entering Game.
+
+1. pick side SF/TERROR
+2. Select Player Class SNIPER/SUPPORT/ASSAULT (This is open to easiest way for FilRip to make it )
+3. Once in your Buy screen is limited to the above options. 1 item from each bracketed section is allowed.
+
+Differences from Normal Tactical Ops.
+
+1. No money needed to buy stuff, the player chooses from his options with no money restrictions.
+2. When players die, weapons are not dropped to be collected.
+3. Disable drop weapon so player 's cant drop weapons or use other classes weapons etc.
+4. No Buyzone after 30 seconds ish, as buy and selling wont be relevant.
+
+Maps to use:
+
+TBA
+
+   

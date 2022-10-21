@@ -1,0 +1,90 @@
+//----------------------------------------------------------------------------
+// Project : TOST
+// File    : TOSTArmoryModels.uc
+// Version : 0.5
+// Author  : BugBunny
+//----------------------------------------------------------------------------
+// Version	Changes
+// 0.5		+ first release
+// 0.7		+ added multi c4
+//----------------------------------------------------------------------------
+
+class TOSTArmoryModels expands Actor;
+///////////////////////////////////////
+// C4
+///////////////////////////////////////
+#exec texture IMPORT NAME=TOSTC4WBlue FILE=TEXTURES\C4\C4-blue.pcx GROUP="Skins" LODSET=2
+#exec texture IMPORT NAME=TOSTC4WRed FILE=TEXTURES\C4\C4-red.pcx GROUP="Skins" LODSET=2
+#exec texture IMPORT NAME=TOSTC4PBlue FILE=TEXTURES\C4\C4-1blue.pcx GROUP="Skins" LODSET=2
+#exec texture IMPORT NAME=TOSTC4PRed FILE=TEXTURES\C4\C4-1red.pcx GROUP="Skins" LODSET=2
+#exec texture IMPORT NAME=TOSTScreen FILE=TEXTURES\C4\C4-Screen.pcx GROUP="Skins" LODSET=2
+
+
+// C4 3rd person view model
+#exec mesh IMPORT MESH=TOSTC43 ANIVFILE=MODELS\C4\TOSTC4_a.3d DATAFILE=MODELS\C4\TOSTC4_d.3d X=0 Y=0 Z=0
+#exec mesh LODPARAMS MESH=TOSTC43 STRENGTH=0.2
+#exec mesh ORIGIN MESH=TOSTC43 X=105 Y=-12 Z=18 YAW=128 PITCH=0 ROLL=0
+
+#exec MESHMAP new   MESHMAP=TOSTC43 MESH=TOSTC43
+#exec MESHMAP scale MESHMAP=TOSTC43 X=0.08 Y=0.08 Z=0.16
+
+#exec MESHMAP SETTEXTURE MESHMAP=TOSTC43 NUM=0 TEXTURE=TOSTC4WBlue
+#exec MESHMAP SETTEXTURE MESHMAP=TOSTC43 NUM=1 TEXTURE=TOSTScreen
+
+
+// C4 pickup
+#exec mesh IMPORT MESH=TOSTC4P ANIVFILE=MODELS\C4\TOSTC4_a.3d DATAFILE=MODELS\C4\TOSTC4_d.3d X=0 Y=0 Z=0
+#exec mesh LODPARAMS MESH=TOSTC4P STRENGTH=0.2
+#exec mesh ORIGIN MESH=TOSTC4P X=100 Y=0 Z=0 YAW=0 PITCH=64 ROLL=64
+
+#exec MESHMAP new   MESHMAP=TOSTC4P MESH=TOSTC4P
+#exec MESHMAP scale MESHMAP=TOSTC4P X=0.2 Y=0.2 Z=0.4
+
+#exec MESHMAP SETTEXTURE MESHMAP=TOSTC4P NUM=0 TEXTURE=TOSTC4WBlue
+#exec MESHMAP SETTEXTURE MESHMAP=TOSTC4P NUM=1 TEXTURE=TOSTScreen
+
+
+// C4 explosive
+#exec mesh IMPORT MESH=TOSTC4E ANIVFILE=MODELS\C4\TOSTC4_a.3d DATAFILE=MODELS\C4\TOSTC4_d.3d X=0 Y=0 Z=0
+#exec mesh LODPARAMS MESH=TOSTC4E STRENGTH=0.2
+#exec mesh ORIGIN MESH=TOSTC4E X=170 Y=0 Z=10 YAW=0 PITCH=0 ROLL=0
+
+#exec MESHMAP new   MESHMAP=TOSTC4E MESH=TOSTC4E
+#exec MESHMAP scale MESHMAP=TOSTC4E X=0.2 Y=0.2 Z=0.4
+
+#exec MESHMAP SETTEXTURE MESHMAP=TOSTC4E NUM=0 TEXTURE=TOSTC4WBlue
+#exec MESHMAP SETTEXTURE MESHMAP=TOSTC4E NUM=1 TEXTURE=TOSTScreen
+
+
+//C4 Textures
+#exec texture IMPORT NAME=C4Trans FILE=TEXTURES\Trans\C4.pcx LODSET=2 MIPS=OFF FLAGS=2
+#exec texture IMPORT NAME=C4Solid FILE=TEXTURES\Solid\C4.pcx LODSET=2 MIPS=OFF FLAGS=2
+
+
+//C4 Lazer
+#exec mesh IMPORT MESH=lazer ANIVFILE=MODELS\C4\lazer_a.3d DATAFILE=MODELS\C4\lazer_d.3d X=0 Y=0 Z=0
+#exec mesh ORIGIN MESH=lazer X=0 Y=0 Z=400
+
+#exec MESHMAP new MESHMAP=lazer MESH=lazer
+#exec MESHMAP scale MESHMAP=lazer X=0.2 Y=0.2 Z=0.2
+
+
+//Lazer texture
+#exec OBJ LOAD FILE=Textures\Pack.utx  PACKAGE=C4Pack42.Pack
+
+// C4 laser buy menu
+#exec mesh IMPORT MESH=TOSTC43l ANIVFILE=MODELS\C4\TOSTC4_a.3d DATAFILE=MODELS\C4\TOSTC4_d.3d X=0 Y=0 Z=0
+#exec mesh LODPARAMS MESH=TOSTC43l STRENGTH=0.2
+#exec mesh ORIGIN MESH=TOSTC43l X=105 Y=-12 Z=18 YAW=128 PITCH=0 ROLL=0
+
+#exec MESHMAP new   MESHMAP=TOSTC43l MESH=TOSTC43l
+#exec MESHMAP scale MESHMAP=TOSTC43l X=0.08 Y=0.08 Z=0.16
+
+#exec MESHMAP SETTEXTURE MESHMAP=TOSTC43l NUM=0 TEXTURE=TOSTC4WRed
+#exec MESHMAP SETTEXTURE MESHMAP=TOSTC43l NUM=1 TEXTURE=TOSTScreen
+
+
+//C4s solid/trans Textures
+#exec texture IMPORT NAME=C4Trans	FILE=TEXTURES\Trans\C4.pcx	LODSET=2 MIPS=OFF FLAGS=2
+#exec texture IMPORT NAME=LazerC4Solid	FILE=TEXTURES\Solid\C4Red.pcx	LODSET=2 MIPS=OFF FLAGS=2
+#exec texture IMPORT NAME=TimerC4Solid	FILE=TEXTURES\Solid\C4Blue.pcx	LODSET=2 MIPS=OFF FLAGS=2

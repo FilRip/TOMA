@@ -1,0 +1,253 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+  <title>Readme - TOST v1.2 - Tactical Ops Server Tool</title>
+  <style>
+    BODY{
+	font-family: Verdana;
+	font-size: 10pt; 
+scrollbar-face-color:#ffffff;
+scrollbar-arrow-color:black;
+scrollbar-track-color:#ffffff;
+scrollbar-shadow-color:'#000000';
+scrollbar-highlight-color:'#00000';
+scrollbar-3dlight-color:'';
+scrollbar-darkshadow-Color:'';
+}
+
+h3 {font-family: Verdana; font-size: 7pt; color: #000000; font-style: normal; font-weight: normal; text-align: left; }
+table {font-family: Verdana; font-size: 10pt; color: #00FF00;  font-style: normal; font-weight: normal; text-align: left; }
+
+a:link { font-family: Courier New, Courier, mono; font-size: 12; font-style: normal; color: #000000; text-decoration: none }
+a:hover { font-family: Courier New, Courier, mono; font-size: 12; font-style: normal; color: #000000; text-decoration: none }
+a:visited { font-family: Courier New, Courier, mono; font-size: 12; font-style: normal; color: #000000; text-decoration: none }
+a:active { font-family: Courier New, Courier, mono; font-size: 12; font-style: normal; color: #000000; text-decoration: none }
+  </style>
+<head>
+
+
+<body>
+<img src="gfx/tost.gif">
+<a href="#abouttost" target="_self">About TOST</a>
+<img src="gfx/leer.gif" width="5" height="8">|<img src="gfx/leer.gif" width="8" height="8">
+<a href="#install" target="_self">Installation</a>
+<img src="gfx/leer.gif" width="5" height="8">|<img src="gfx/leer.gif" width="5" height="1">
+<a href="#features" target="_self">Features</a>
+<img src="http://harakiri.it-pc.de/images/leer.gif" width="5" height="8">|<img src="http://harakiri.it-pc.de/images/leer.gif" width="1" height="1">
+<a href="#faq" target="_self">FAQ</a>
+<img src="gfx/leer.gif" width="5" height="8">|<img src="gfx/leer.gif" width="5" height="1">
+<a href="http://tost.to-center.com" target="new">Homepage</a>
+<img src="gfx/leer.gif" width="5" height="1">|<img src="gfx/leer.gif" width="5" height="1">
+<a href="#pop" onclick="window.open(url='http://tost.to-center.com/index.php','displayWindow','width=640,height=480 status=yes,toolbar=yes,menubar=yes, titlebar=no, resizable=yes, scrollbars=yes')">Support 
+&amp; Admin Forums</a>
+
+
+<hr noshade>
+  <a name="abouttost"></a>
+  <h2><b><u>TOST - Tactical O</u>p<u>s Server Tool</u></h2>
+  An Anticheating Server(Admin) Tool<bR>
+  &copy; 2002 by BugBunny / MadOnion / Harakiri<br>
+  Release 1.2</b><p><br><br>
+  
+
+
+  <a name="abouttost"></a>
+  <b><u>What this Server Actor provides:</u></b><br>
+  This ServerActor enhances the game by saving playerdata and restoring it on reconnection<br>
+  (we had to help the poor little kids with crashing computers), as well as providing an enhanced HUD, <br>
+  a number of new admin commands and it of course detects, deactivates and logs a noticable number<br>
+  of cheats.<br>
+  For obvious reason we won't tell you which ones ... <img src="gfx/finger2.gif"><br>
+  so don't cheat and there won't be any bad surprises! <img src="gfx/biggrin.gif"><p><br>
+
+  <b><u>Disclaimer:</u></b><br>
+  As usual, we don't take responsibility for anything this ServerActor damages on the clientside. <img src="gfx/notme.gif"><br>
+Note: Some of the implemented functions are either under the copyright of<br> The Tactical Ops Team or the CHSP Team!<p><br>
+
+<b><u>Version History:</u></b>
+<table cellspacing=2 cellpadding=5 border=0>
+  
+  <tr><td><b>Version</b></td><td colspan=2><b>Date</b></td><td><b>Author</b></td><td><b>Changes</b></td>
+  <tr><td> 1.0</td><td>01.03.2002</td><td>09:00</td><td>BB/MO/HK</td><td>+ First Release</td>
+  <tr><td> 1.1</td><td>13.03.2002</td><td>09:00</td><td>BB/MO/HK</td><td># Jolt Logo bug fixed</td>
+  <tr><td></td><td></td><td></td><td></td><td># WebConsole say/teamsay commands work again</td>
+  <tr><td></td><td></td><td></td><td></td><td># RememberStats messages removed due to common request</td>
+  <tr><td></td><td></td><td></td><td></td><td># RememberStats works now on shared IP lines (needs more testing)</td>
+  <tr><td></td><td></td><td></td><td></td><td># added option to resolve some problems with packages conflicting with TOST (TOMapVote)</td>  
+  <tr><td></td><td></td><td></td><td></td><td>+ INT file is gone, now uses your servers INI file (see notes below)</td>  
+  <tr><td></td><td></td><td></td><td></td><td>+ AllowHUDExtensions admin setting</td>
+  <tr><td></td><td></td><td></td><td></td><td>+ xkick/xpkick commands (see below)</td>
+  <tr><td></td><td></td><td></td><td></td><td>+ added old AdeAway2 showweapon mode (use showweapon twice)</td>
+  <tr><td></td><td></td><td></td><td></td><td>+ detect some additional hacks</td>
+  <tr><td></td><td></td><td></td><td></td><td># other minor fixes</td>
+  <tr><td> 1.2</td><td>01.04.2002</td><td>09:00</td><td>BB/MO/HK</td><td>+ more hacks detected </td>
+  <tr><td></td><td></td><td></td><td></td><td>+ echo command (use this to message something to yourself in your scripts)</td>
+  <tr><td></td><td></td><td></td><td></td><td>+ alternative vote system avaiable (see below)</td>
+  <tr><td></td><td></td><td></td><td></td><td>+ remembers user preferences for TeamInfo/weapon HUD on client side</td>
+  <tr><td></td><td></td><td></td><td></td><td>+ admins can not be voted out of the game anymore</td>
+  <tr><td></td><td></td><td></td><td></td><td># #T macro now linked to HUD id system</td>
+  <tr><td></td><td></td><td></td><td></td><td># other minor fixes</td>
+
+</table>
+<p><br>
+  
+<b><u>Currently known bugs:</u></b><br>
+players times are broken clientside on reconnect
+<p><br>
+<hr><br>
+
+<a name="install"></a>
+<b><u>Installation:</u></b><p>
+
+
+1) Copy/unzip <b>TOST12.u</b> to your UT/system directory<br>
+&nbsp;&nbsp;&nbsp;&nbsp;and <b>TOSTTex.utx</b> to your UT/textures directory.<p>
+
+2a) If you have AdeAway2 installed remove these lines in the [Engine.GameEngine] section of your TacticalOps.ini / UnrealTournament.ini:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ServerPackages=AdeAway2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ServerActors=AdeAway2.AdeAwayServerActor<p>
+
+2b) Add/edit following lines to/in the [Engine.GameEngine] section of your TacticalOps.ini / UnrealTournament.ini:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ServerPackages=TOST12<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ServerPackages=TOSTTex<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ServerActors=TOST12.TOSTServerActor<p>
+
+2c) Add this section to your servers INI file and edit it to match your wishes :<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[TOST12.TOSTServerMutator]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SecurityFrequency=5.000000<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SecurityTolerance=20.000000<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SecurityLevel=1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MaxInitTries=15<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UseTOSTLog=True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ProtectionTime=120<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AllowOtherVoicePacks=False<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RememberStats=True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EnvVoteSystem=True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SecureFlashbang=True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UsedPackages=<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AllowHUDExtensions=True<br><br>
+&nbsp;&nbsp;<b>IMPORTANT</b><br>
+&nbsp;&nbsp;If you are using the TOMapVote mutator, edit the UsedPackages line to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UsedPackages=TOMAPVOTE100<br>
+&nbsp;&nbsp;or<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UsedPackages=TOMAPVOTE10M<br>
+&nbsp;&nbsp;(depending on the TOMapVote version you use)<p>
+
+3) Restart your server. If you don't have shell access, your provider probabaly has a startup script running.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;In this case login as admin on your server and restart it with the "admin quit" command.<bR>
+&nbsp;&nbsp;&nbsp;&nbsp;Note: Changing the map or restarting it via WebAdmin won't work, because the *.ini will not be loaded.<p>
+
+<b>Special note for Linux servers:</b><br>
+ The specified *.ini files are in a hidden directory "/.loki/ut/System", not in the "/ut/System" directory!<br>
+ For more details see the German FAQ section @ <a href="http://gameserver4u.gcpro.de/gameserver4u/index.php3?page=faq&details=yes&category=ut&id=11" target=new>www.gameserver4u.de</a><p><br><br>
+
+<b><u>Properties in your server's ini file:</u></b><br>
+You can edit these either in the INI file or use the "admin set"-commands. Changes are stored on mapchange.<p>
+<i>SecurityFrequency</i><bR>
+=> how often (in secs) the client is checked<p>
+<i>SecurityTolerance</i><br>
+=> how tolerant TOST is, if answer is delayed<p>
+<i>SecurityLevel</i><br>
+=> 0 = log only, 1 = kick, 2 = kickban (if possible)<p>
+<i>MaxInitTries</i><br>
+=> allowed login time (in secs)<p>
+<i>UseTOSTLog</i><br>
+=> use separate TOST logs (they are in the same logs directory as the NGStats logs)<p>
+<i>ProtectionTime</i><br>
+=> how long the serverprotection lasts (details under the admin commands)<p>
+<i>RememberStats</i><br>
+=> Remember and restore the stats of players that have been disconnected (computer crash)<p>
+<i>AllowOtherVoicePacks</i><br>
+=> (dis)allow VoicePack Hacks (Skreem Mutator etc.)<p>
+<i>AllowHUDExtensions</i><br>
+=> (dis)allow TOSTs HUD extensions (TeamInfo, WeaponHUD)<p>
+<i>EnhVoteSystem</i><br>
+=> enable/disable alternate vote system (every negative frag point will need you one vote less to be kicked)<p>
+<i>SecureFlashbang</i><br>
+=> use alternate flashbang code that is executed serverside only to stop some flashbanghacks<p>
+<i>UsedPackages</i><br>
+=> exclude listed packages from some incompatible TOST checks, packages names are separated by ";"<br>
+&nbsp;&nbsp;for example : <i>UsedPackages=TOMAPVOTE100;DEONLY</i><br>
+&nbsp;&nbsp;NOTE : only add packages that are conflicting with TOST for security reasons<br>
+&nbsp;&nbsp;current known conflicting packages : TOMapVote (TOMAPVOTE100, TOMAPVOTE10M)<p><br>
+
+<hr><br>
+
+<a name="features"></a>
+<b><u>Features:</u></b><p>
+<b><u>Following console commands now exist:</u></b><p>
+<i>TOSTInfo</i><br>
+=> shows some basic infos about TOST's current configuration<p>
+<i>ShowTeamInfo</i><br>
+=> (de)activates the Team Info Hud Extension (no more switching to the scoreboard during gameplay)<p>
+<i>ShowWeapon</i><br>
+=> cycle through Weapons HUD extensions mode (off, full, small)<p>
+<i>xSay / xTeamSay</i><br>
+=> like Say/TeamSay, but capable of executing macros:<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;## - print #<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#W - players weapon<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#T - players target name<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#N - players name<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#L - players location (if defined by the mapper !)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#H - players health<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#B - players buddies (all people of the same team within 1500 units)<p>
+<i>TeamSay</i><br>
+=> has been modified to mark TeamSay as such<p>
+<i>Echo</i><br>
+=> message to yourself only (useful for buy scripts) - can also execute macros<p>
+<br>
+
+<b><u>Following admin commands now exist:</u></b><p>
+<i>summon</i><br>
+=> now only available to admins<p>
+<i>KickTK</i><br>
+=> kickban all players with a negative score (excluding admins)<p>
+<i>mkteams</i><br>
+=> makes even teams, moving those players that have logged on last (and should have made teams)<p>
+<i>xkick</i><br>
+=> like kick, but also erases stats<p>
+<i>xpkick</i><br>
+=> like pkick, but also erases stats<p>
+
+<i>ProtectSrv</i><br>
+=> sets a random game password for a given period of time, in order to prevent the reconnection
+   of quickly IP changing <b>teamkillers</b> and <b>cheaters</b> that you have previously kickbanned. The password will be shown to the admins (everybody else can have a nice time trying all of the 308,915,776 possibilities when reconnecting ... <img src="gfx/biggrin.gif">)<p>
+The password will be removed if<br>
+   a) time is up<bR>
+   b) end of map has been reached<br>
+   c) another call to "ProtectSrv" is made<p>
+
+Note: ProtectSrv will remove a previously set password!<br><p><br>
+
+<hr><br>
+<a name="faq"></a>
+<b><u>FAQ:</u></b><p>
+  <b><u>Where do I get support!?:</u></b><br>
+If you have a problem or suggestion, feel free to visit us at our &nbsp;<a href="#pop" onclick="window.open(url='http://tost.to-center.com/phpBB2/index.php','displayWindow','width=640,height=480 status=yes,toolbar=yes,menubar=yes, titlebar=no, resizable=yes, scrollbars=yes')">Support 
+&amp; Admin Forums</a><br>
+Note: Cheaters will not be supported! So don't even dare ask ...<p><br>
+
+<b><u>What happened to AdeAway!?:</u></b><br>
+It has been replaced with TOST.<p><br>
+
+<b><u>When will the next version be released!?:</u></b><br>
+<img src="gfx/whenitsdone.gif">
+<p><br>
+<hr><br>
+<b><u>Special Thanks to:</u></b><br>
+
+=SWAT= Special Weapons Assault Team for alpha/betatesting TOST<bR> 
+&nbsp;&nbsp;&nbsp;&nbsp;<i>(alphatesting was a real pain in the ass thx to the TOST Team junkcoders <img src="gfx/biggrin.gif">)</i><br>
+(v) Mortis-Veles for betatesting<br>
+DeathWolf @ <a href="http://www.gameserver4u.de" target=new>www.gameserver4u.de</a> for supporting =SWAT= when alphatesting<br>
+Japh &amp; Prezident for betatesting on their servers and their detailed bug reports<br>
+Ian R. for the encryption code<br>
+Bandit @ <a href="http://www.to-center.com" target=new>www.to-center.com</a> for hosting our site<br>
+all the other people supporting us in the forum by sending in bug reports and suggestions<br>
+
+<h3><hr><center>&copy;2002 ToST Team</center></h3><p>
+</font>
+</html>
+
